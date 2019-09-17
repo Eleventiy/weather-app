@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="location">
+      <h1 class="location__title" id="locationTimezone">Timezone</h1>
+      <canvas class="location__icon" id="locationIcon" width="128" height="128"></canvas>
+    </div>
+
+    <div class="temperature">
+      <div class="temperature__header" id="temperatureHeader">
+        <h2 class="temperature__title" id="temperatureDegree">34</h2>
+        <span class="temperature__digit" id="temperatureDigit">F</span>
+      </div>
+
+      <div class="temperature__descr" id="temperatureDescr">Its friggin cold</div>
+    </div>
+
+    <script src="skycons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

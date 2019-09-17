@@ -1,0 +1,48 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+  background-image: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.temperature__header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.temperature__title {
+  font-size: 40px;
+}
+
+.temperature__digit {
+  margin: 10px;
+  font-size: 30px;
+}
